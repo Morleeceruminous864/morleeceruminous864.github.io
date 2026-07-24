@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Shyam Sunder Sahani — ERP Manager | Frappe Developer</title>
-<meta name="description" content="Portfolio of Shyam Sunder Sahani — Full Stack ERP & Web Developer, Frappe/ERPNext specialist, React Native developer." />
+<meta name="description" content="Portfolio of Shyam Sunder Sahani — ERP Manager & Frappe/ERPNext Developer specializing in custom app development, DocTypes, print formats and reports." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +13,20 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
 <div class="blob blob-1"></div>
 <div class="blob blob-2"></div>
 <div class="blob blob-3"></div>
 
 <nav class="navbar" id="navbar">
-  <a href="#home" class="logo">SS<span class="dot">.</span></a>
+  <a href="#home" class="logo">SSS<span class="dot">.</span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="#home" class="nav-link active">Home</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
     <li><a href="#skills" class="nav-link">Skills</a></li>
     <li><a href="#experience" class="nav-link">Experience</a></li>
     <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -35,31 +37,81 @@
 
 <!-- HERO -->
 <header id="home" class="hero">
-  <div class="hero-inner reveal">
-    <p class="hero-eyebrow">Hi, I'm</p>
-    <h1 class="hero-name">Shyam Sunder Sahani</h1>
-    <h2 class="hero-role">
-      <span id="typewriter"></span><span class="cursor">|</span>
-    </h2>
-    <p class="hero-desc">
-      6+ years building scalable ERP systems on <strong>Frappe/ERPNext</strong> and full-stack
-      web apps in <strong>PHP, Python &amp; JavaScript</strong> — now also crafting offline-first
-      <strong>React Native</strong> mobile apps under my own "Gurujan" app family.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+  <div class="hero-grid">
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">👋 Hi, I'm</p>
+      <h1 class="hero-name">Shyam Sunder Sahani</h1>
+      <h2 class="hero-role">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        6+ years writing <strong>Python, PHP &amp; JavaScript</strong> on top of
+        <strong>MySQL &amp; MS SQL</strong> — with deep, hands-on expertise building and
+        customizing <strong>Frappe / ERPNext</strong> systems end-to-end, from custom apps and
+        DocTypes to reports and workflow automation, plus <strong>React Native</strong> mobile
+        apps in my own time.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/shyamsahani01" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.76 2.71 1.25 3.37.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/shyam-sunder-sahani-4718a0151/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:shyamsundersahani01@gmail.com" aria-label="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.94 6.7a1 1 0 0 1-1.12 0L2 7.24V19h20V7.24ZM3.2 5l8.8 6.6L20.8 5H3.2Z"/></svg>
+        </a>
+        <a href="tel:+919610226455" aria-label="Phone" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg>
+        </a>
+      </div>
     </div>
-    <div class="hero-socials">
-      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon" id="githubLink">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.76 2.71 1.25 3.37.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg>
-      </a>
-      <a href="mailto:shyamsundersahani01@gmail.com" aria-label="Email" class="social-icon">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.94 6.7a1 1 0 0 1-1.12 0L2 7.24V19h20V7.24ZM3.2 5l8.8 6.6L20.8 5H3.2Z"/></svg>
-      </a>
-      <a href="tel:+919610226455" aria-label="Phone" class="social-icon">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg>
-      </a>
+
+    <div class="hero-visual reveal">
+      <div class="orbit-glow"></div>
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="avatar-core"><img src="assets/img/profile-v3.png" alt="Shyam Sunder Sahani" /></div>
+      <div class="orbit orbit-a">
+        <div class="orbit-icon-pos">
+          <span class="orbit-icon" title="Frappe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </span>
+        </div>
+      </div>
+      <div class="orbit orbit-b">
+        <div class="orbit-icon-pos">
+          <span class="orbit-icon" title="Python">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </span>
+        </div>
+      </div>
+      <div class="orbit orbit-c">
+        <div class="orbit-icon-pos">
+          <span class="orbit-icon" title="PHP">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="1"></rect><rect x="2" y="14" width="20" height="7" rx="1"></rect><circle cx="6" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle><circle cx="6" cy="17.5" r="0.6" fill="currentColor" stroke="none"></circle></svg>
+          </span>
+        </div>
+      </div>
+      <div class="orbit orbit-d">
+        <div class="orbit-icon-pos">
+          <span class="orbit-icon" title="JavaScript">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13 2 3 14h7l-1 8 10-12h-7z"></path></svg>
+          </span>
+        </div>
+      </div>
+      <div class="orbit orbit-e">
+        <div class="orbit-icon-pos">
+          <span class="orbit-icon" title="MySQL">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path></svg>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="scroll-indicator"><span></span></div>
@@ -67,62 +119,58 @@
 
 <main>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="section-head reveal">
-    <p class="section-tag">01 — About Me</p>
-    <h2 class="section-title">Turning complex operations into clean software</h2>
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-group">
+      <span>FRAPPE</span><span>•</span><span>ERPNEXT</span><span>•</span><span>PYTHON</span><span>•</span>
+      <span>PHP</span><span>•</span><span>JAVASCRIPT</span><span>•</span><span>JQUERY</span><span>•</span>
+      <span>MYSQL</span><span>•</span><span>MS SQL</span><span>•</span><span>GITHUB</span><span>•</span>
+      <span>LARAVEL</span><span>•</span><span>CODEIGNITER</span><span>•</span><span>REACT NATIVE</span><span>•</span>
+    </span>
+    <span class="marquee-group" aria-hidden="true">
+      <span>FRAPPE</span><span>•</span><span>ERPNEXT</span><span>•</span><span>PYTHON</span><span>•</span>
+      <span>PHP</span><span>•</span><span>JAVASCRIPT</span><span>•</span><span>JQUERY</span><span>•</span>
+      <span>MYSQL</span><span>•</span><span>MS SQL</span><span>•</span><span>GITHUB</span><span>•</span>
+      <span>LARAVEL</span><span>•</span><span>CODEIGNITER</span><span>•</span><span>REACT NATIVE</span><span>•</span>
+    </span>
   </div>
-  <div class="about-grid reveal">
-    <p class="about-text">
-      I'm a Full Stack ERP &amp; Web Developer from Jaipur, Rajasthan with a can-do mindset and a
-      strong drive to create results. Over the past 6+ years I've implemented, customized and
-      supported <strong>ERPNext / Frappe</strong> systems end-to-end — HR, Payroll, Sales,
-      Purchase and Manufacturing modules — while also shipping PHP (Laravel, CodeIgniter) and
-      JavaScript web applications for real clients. I care about accurate data, clean debugging
-      and making sure the people using what I build actually understand it.
-      <br/><br/>
-      Outside client work, I design and build my own React Native apps solo — end to end,
-      from architecture to UI — under a personal app family called <strong>"Gurujan"</strong>.
-    </p>
-    <div class="about-stats">
-      <div class="stat-card">
-        <span class="stat-num">6+</span>
-        <span class="stat-label">Years Experience</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num">6+</span>
-        <span class="stat-label">Projects Shipped</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num">4</span>
-        <span class="stat-label">Companies</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-num">2</span>
-        <span class="stat-label">Languages Spoken</span>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
 <!-- SKILLS -->
 <section id="skills" class="section section-alt">
   <div class="section-head reveal">
-    <p class="section-tag">02 — Skills</p>
+    <p class="section-tag">// 01 · Skills</p>
     <h2 class="section-title">Tools &amp; technologies I work with</h2>
   </div>
 
   <div class="skills-grid">
+    <div class="skill-cat skill-cat-wide reveal">
+      <h3>Frappe / ERPNext Expertise</h3>
+      <div class="pills">
+        <span class="pill pill-accent">Custom App Development</span>
+        <span class="pill pill-accent">Custom DocTypes</span>
+        <span class="pill pill-accent">Print Format Design</span>
+        <span class="pill pill-accent">Query &amp; Script Reports</span>
+        <span class="pill pill-accent">Client Scripts</span>
+        <span class="pill pill-accent">Server Scripts</span>
+        <span class="pill pill-accent">Workflow Automation</span>
+        <span class="pill pill-accent">REST API Integration</span>
+        <span class="pill pill-accent">Role &amp; Permission Setup</span>
+        <span class="pill pill-accent">Custom Fields &amp; Property Setters</span>
+        <span class="pill pill-accent">Hooks</span>
+        <span class="pill pill-accent">Data Migration</span>
+      </div>
+    </div>
     <div class="skill-cat reveal">
-      <h3>ERP &amp; Backend</h3>
+      <h3>Backend</h3>
       <div class="pills">
         <span class="pill">Frappe</span>
-        <span class="pill">ERPNext</span>
         <span class="pill">Python</span>
         <span class="pill">PHP</span>
         <span class="pill">CodeIgniter</span>
         <span class="pill">Laravel</span>
+        <span class="pill">CakePHP</span>
+        <span class="pill">REST APIs</span>
       </div>
     </div>
     <div class="skill-cat reveal">
@@ -130,17 +178,11 @@
       <div class="pills">
         <span class="pill">JavaScript</span>
         <span class="pill">jQuery</span>
-        <span class="pill">HTML/CSS</span>
+        <span class="pill">HTML5 &amp; CSS3</span>
+        <span class="pill">Bootstrap</span>
+        <span class="pill">AJAX</span>
         <span class="pill">WordPress</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <h3>Mobile — Gurujan Apps</h3>
-      <div class="pills">
-        <span class="pill pill-accent">React Native</span>
-        <span class="pill pill-accent">TypeScript</span>
-        <span class="pill pill-accent">NativeWind</span>
-        <span class="pill pill-accent">Zustand</span>
+        <span class="pill">Responsive Design</span>
       </div>
     </div>
     <div class="skill-cat reveal">
@@ -148,14 +190,93 @@
       <div class="pills">
         <span class="pill">MySQL</span>
         <span class="pill">MS SQL Server</span>
+        <span class="pill">MariaDB</span>
+        <span class="pill">Query Optimization</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <h3>Deployment &amp; Server</h3>
+      <div class="pills">
+        <span class="pill">Frappe Bench CLI</span>
+        <span class="pill">Linux Server Setup</span>
+        <span class="pill">Nginx</span>
+        <span class="pill">Supervisor</span>
+        <span class="pill">Cron Jobs</span>
+        <span class="pill">Go-Live Deployment</span>
       </div>
     </div>
     <div class="skill-cat reveal">
       <h3>Tools</h3>
       <div class="pills">
         <span class="pill">Git &amp; GitHub</span>
+        <span class="pill">VS Code</span>
+        <span class="pill">Postman</span>
         <span class="pill">MS Office</span>
       </div>
+    </div>
+    <div class="skill-cat reveal">
+      <h3>Soft Skills</h3>
+      <div class="pills">
+        <span class="pill">Client &amp; User Training</span>
+        <span class="pill">Team Coordination</span>
+        <span class="pill">Attention to Detail</span>
+        <span class="pill">Problem Solving</span>
+        <span class="pill">Documentation</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="subgroup-title subgroup-title-top-gap">🧭 ERPNext Modules I Work With</h3>
+  <div class="module-grid">
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">💰</span>
+      <h4>Accounts</h4>
+      <p>Ledgers, invoicing &amp; tax reports</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🧑‍💼</span>
+      <h4>HR &amp; Payroll</h4>
+      <p>Employee records, attendance &amp; salary</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">📈</span>
+      <h4>Sales</h4>
+      <p>Quotations, orders &amp; customer tracking</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🛒</span>
+      <h4>Purchase</h4>
+      <p>Supplier orders &amp; procurement</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🤝</span>
+      <h4>CRM</h4>
+      <p>Leads, opportunities &amp; follow-ups</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🏭</span>
+      <h4>Manufacturing</h4>
+      <p>BOM, work orders &amp; production</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">📁</span>
+      <h4>Projects</h4>
+      <p>Tasks, timesheets &amp; milestones</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">📦</span>
+      <h4>Stock &amp; Inventory</h4>
+      <p>Warehouses, stock levels &amp; transfers</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🏷️</span>
+      <h4>Asset Management</h4>
+      <p>Asset tracking &amp; depreciation</p>
+    </div>
+    <div class="module-card reveal">
+      <span class="module-icon-wrap">🌐</span>
+      <h4>Website / Portal</h4>
+      <p>Customer &amp; employee portals</p>
     </div>
   </div>
 </section>
@@ -163,7 +284,7 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
   <div class="section-head reveal">
-    <p class="section-tag">03 — Experience</p>
+    <p class="section-tag">// 02 · Experience</p>
     <h2 class="section-title">Where I've worked</h2>
   </div>
 
@@ -175,9 +296,11 @@
         <h3>Sr Officer – ERP System</h3>
         <p class="timeline-company">Classic Signages Pvt. Ltd., Jaipur</p>
         <ul>
-          <li>Working on ERPNext (Frappe Framework) implementation, customization and support.</li>
+          <li>Driving ERPNext (Frappe Framework) implementation, customization and support across <strong>Accounts, HR &amp; Payroll, Manufacturing and Stock</strong> modules.</li>
+          <li>Building custom DocTypes and custom apps to match manufacturing-specific workflows not covered by standard ERPNext.</li>
+          <li>Designing custom print formats (invoices, job cards, delivery notes) and query/script reports for management visibility.</li>
           <li>Managing frontend/backend systems and coordinating with internal teams.</li>
-          <li>Configuring, testing and maintaining ERP applications.</li>
+          <li>Configuring, testing and maintaining ERP applications end-to-end.</li>
         </ul>
       </div>
     </div>
@@ -189,10 +312,12 @@
         <h3>ERP Manager | ERPNext Developer</h3>
         <p class="timeline-company">Pinkcity Jewel House Pvt. Ltd., Jaipur</p>
         <ul>
+          <li>Implemented, customized and supported ERPNext across <strong>Accounts, HR &amp; Payroll, Sales, Purchase and Stock</strong> modules for a jewellery retail business.</li>
+          <li>Developed custom DocTypes and a custom app extension to handle jewellery-specific stock, purity and pricing logic beyond stock ERPNext.</li>
+          <li>Designed custom print formats for GST-compliant invoices, sales orders and payslips matching brand requirements.</li>
+          <li>Built custom Query &amp; Script Reports for Sales, Purchase and Payroll used directly by management.</li>
           <li>Managed frontend and backend for websites built on the Frappe Framework and maintained WordPress sites.</li>
-          <li>Implemented, customized and supported ERPNext across HR, Payroll, Sales and Purchase modules.</li>
-          <li>Developed custom Doctypes, handled debugging, and provided user training and technical support.</li>
-          <li>Configured, tested and maintained the ERP system through go-live and ongoing operations.</li>
+          <li>Handled debugging, user training and technical support; configured, tested and maintained the system through go-live and ongoing operations.</li>
         </ul>
       </div>
     </div>
@@ -230,65 +355,128 @@
 <!-- PROJECTS -->
 <section id="projects" class="section section-alt">
   <div class="section-head reveal">
-    <p class="section-tag">04 — Projects</p>
+    <p class="section-tag">// 03 · Projects</p>
     <h2 class="section-title">Things I've built</h2>
   </div>
 
-  <h3 class="subgroup-title reveal">📱 Personal Apps — Gurujan Family</h3>
-  <div class="projects-grid">
-    <div class="project-card reveal">
-      <div class="project-top">
-        <span class="project-icon">💰</span>
-        <span class="badge badge-dev">In Development</span>
-      </div>
-      <h3>Bill Gurujan</h3>
-      <p>Offline-first Tally/Khatabook-style accounting app. Fully local storage (no backend),
-      Hindi + English support, full edit history &amp; audit trail on every record.</p>
-      <div class="tech-tags">
-        <span>React Native</span><span>TypeScript</span><span>NativeWind</span><span>Zustand</span>
+  <h3 class="subgroup-title">🧩 Frappe / ERPNext — Core Expertise</h3>
+  <div class="expertise-list">
+    <div class="expertise-item reveal">
+      <span class="expertise-num">01</span>
+      <div class="expertise-body">
+        <h3>Custom App &amp; DocType Development</h3>
+        <ul class="project-detail-list">
+          <li>Building standalone custom Frappe apps from scratch for business logic outside standard ERPNext</li>
+          <li>DocTypes with child tables, naming series, mandatory/read-only rules &amp; field-level validations</li>
+          <li>Controller-level Python logic (validate, on_submit, before_save hooks) for business rules</li>
+          <li>Custom Fields, Property Setters &amp; Fixtures for extending standard DocTypes safely</li>
+          <li>App-level hooks.py events and patches for versioned data migrations</li>
+        </ul>
       </div>
     </div>
-
-    <div class="project-card reveal">
-      <div class="project-top">
-        <span class="project-icon">🩺</span>
-        <span class="badge badge-dev">In Development</span>
+    <div class="expertise-item reveal">
+      <span class="expertise-num">02</span>
+      <div class="expertise-body">
+        <h3>Print Format Design</h3>
+        <ul class="project-detail-list">
+          <li>Custom Jinja/HTML print formats for invoices, sales orders, payslips &amp; delivery notes</li>
+          <li>Brand-matched layouts — logos, letterheads, GST/tax breakdowns, terms &amp; signatures</li>
+          <li>Conditional print logic (different layouts per document status or customer type)</li>
+          <li>Print format sets tied to specific DocTypes as system defaults</li>
+        </ul>
       </div>
-      <h3>Health Gurujan</h3>
-      <p>Personal health record tracker — Doctors, visits, tests, medicines &amp; documents in one
-      place, with on-device OCR document scanning and medicine info lookup.</p>
-      <div class="tech-tags">
-        <span>React Native</span><span>TypeScript</span><span>ML Kit OCR</span><span>Zustand</span>
+    </div>
+    <div class="expertise-item reveal">
+      <span class="expertise-num">03</span>
+      <div class="expertise-body">
+        <h3>Reports &amp; Analytics</h3>
+        <ul class="project-detail-list">
+          <li>Query Reports (SQL-backed) for fast, filterable Sales/Purchase/Stock/Payroll views</li>
+          <li>Script Reports in Python for logic too complex for plain SQL</li>
+          <li>Report Builder &amp; dashboard charts for at-a-glance management visibility</li>
+          <li>Scheduled report emails and exportable formats for stakeholders</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-item reveal">
+      <span class="expertise-num">04</span>
+      <div class="expertise-body">
+        <h3>Workflow &amp; Automation</h3>
+        <ul class="project-detail-list">
+          <li>Multi-level approval workflows (Draft → Review → Approved → Submitted)</li>
+          <li>Client scripts for real-time form behaviour and field-level automation</li>
+          <li>Server scripts &amp; scheduled jobs for recurring tasks and notifications</li>
+          <li>Email/SMS alerts triggered on document events</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-item reveal">
+      <span class="expertise-num">05</span>
+      <div class="expertise-body">
+        <h3>Module Implementation</h3>
+        <ul class="project-detail-list">
+          <li>End-to-end setup and go-live of Accounts, HR &amp; Payroll, Sales, Purchase, Stock modules</li>
+          <li>CRM, Manufacturing, Projects &amp; Asset Management module configuration</li>
+          <li>Chart of accounts, tax templates, pricing rules &amp; approval settings</li>
+          <li>End-user training and documentation for adopted modules</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-item reveal">
+      <span class="expertise-num">06</span>
+      <div class="expertise-body">
+        <h3>Integrations &amp; Support</h3>
+        <ul class="project-detail-list">
+          <li>REST API integrations with third-party tools and internal systems</li>
+          <li>Role &amp; permission structuring for department-level data access</li>
+          <li>Data migration and cleansing during ERP go-live</li>
+          <li>Ongoing debugging, patching and production support for live systems</li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <h3 class="subgroup-title reveal">💼 Client &amp; Professional Work</h3>
+  <h3 class="subgroup-title">💼 Featured ERPNext Projects</h3>
   <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-top">
+        <span class="project-icon">🏭</span>
+        <span class="badge badge-current">Current</span>
+      </div>
+      <h3>ERPNext — Classic Signages</h3>
+      <p>Ongoing ERPNext implementation and support, upgraded and maintained across
+      <strong>v15 and v16</strong> for a signage &amp; branding manufacturing business.</p>
+      <ul class="project-detail-list">
+        <li><strong>Modules:</strong> Accounts, HR &amp; Payroll, Manufacturing, Stock</li>
+        <li><strong>Custom development:</strong> custom DocTypes and apps for manufacturing-specific workflows</li>
+        <li><strong>Print formats:</strong> invoices, job cards &amp; delivery notes</li>
+        <li><strong>Reports:</strong> query &amp; script reports for management visibility</li>
+      </ul>
+      <div class="tech-tags"><span>Frappe</span><span>ERPNext v15</span><span>ERPNext v16</span></div>
+    </div>
+
     <div class="project-card reveal">
       <div class="project-top">
         <span class="project-icon">🏢</span>
         <span class="badge badge-live">Live</span>
       </div>
       <h3>ERPNext — Pinkcity Jewel House</h3>
-      <p>Full lifecycle ERPNext implementation on the Frappe framework covering Accounting,
-      HR, Payroll, Sales &amp; Purchase — configured, customized and supported end-to-end.</p>
+      <p>Full lifecycle ERPNext implementation on the Frappe framework, carried through
+      <strong>v13 → v14 → v15</strong> upgrades — configured, customized and supported end-to-end
+      for a jewellery retail business.</p>
+      <ul class="project-detail-list">
+        <li><strong>Modules:</strong> Accounts, HR &amp; Payroll, Sales, Purchase</li>
+        <li><strong>Custom development:</strong> new DocTypes for business-specific workflows, client &amp; server script customizations</li>
+        <li><strong>Print formats:</strong> branded invoices, sales orders &amp; payslips built from scratch</li>
+        <li><strong>Reports:</strong> custom Sales, Purchase &amp; Payroll reports for management</li>
+      </ul>
       <div class="tech-tags"><span>Frappe</span><span>Python</span><span>ERPNext</span></div>
       <a href="https://erp.pinkcityindia.com" target="_blank" rel="noopener" class="project-link">Visit site →</a>
     </div>
+  </div>
 
-    <div class="project-card reveal">
-      <div class="project-top">
-        <span class="project-icon">👥</span>
-        <span class="badge badge-live">Live</span>
-      </div>
-      <h3>ERPNext v15 — HR &amp; Payroll Platform</h3>
-      <p>ERPNext v15 deployment supporting HR &amp; Payroll, CRM, Projects, Accounts and
-      Manufacturing — manages the full employee lifecycle from onboarding to separation.</p>
-      <div class="tech-tags"><span>Frappe</span><span>ERPNext v15</span></div>
-      <a href="https://cse.i-kets.com/" target="_blank" rel="noopener" class="project-link">Visit site →</a>
-    </div>
-
+  <h3 class="subgroup-title">🌐 Other Web Projects</h3>
+  <div class="projects-grid projects-grid-secondary">
     <div class="project-card reveal">
       <div class="project-top">
         <span class="project-icon">⛳</span>
@@ -313,12 +501,50 @@
       <a href="https://maveable.cc/" target="_blank" rel="noopener" class="project-link">Visit site →</a>
     </div>
   </div>
+
+  <h3 class="subgroup-title">🚀 Currently Building — Gurujan App Family</h3>
+  <div class="projects-grid projects-grid-secondary">
+    <div class="project-card reveal">
+      <div class="project-top">
+        <span class="project-icon">🧑‍💼</span>
+        <span class="badge badge-dev">In Development</span>
+      </div>
+      <h3>HR Next Gurujan</h3>
+      <p>Employee self-service mobile app that connects to a <strong>Frappe/ERPNext HR backend</strong> —
+      attendance, leave requests, payslips, expense &amp; advance claims, tasks and team info,
+      all from the phone.</p>
+      <div class="tech-tags"><span>React Native</span><span>TypeScript</span><span>Frappe REST API</span></div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <span class="project-icon">💰</span>
+        <span class="badge badge-dev">In Development</span>
+      </div>
+      <h3>Bill Gurujan</h3>
+      <p>Offline-first Tally/Khatabook-style accounting app I'm designing and building solo,
+      end to end — fully local storage, Hindi + English support, complete edit history &amp;
+      audit trail on every record.</p>
+      <div class="tech-tags"><span>React Native</span><span>TypeScript</span></div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <span class="project-icon">🩺</span>
+        <span class="badge badge-dev">In Development</span>
+      </div>
+      <h3>Health Gurujan</h3>
+      <p>Personal health record tracker — doctors, visits, tests, medicines &amp; documents in one
+      place, with on-device OCR document scanning and medicine info lookup.</p>
+      <div class="tech-tags"><span>React Native</span><span>TypeScript</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education" class="section">
   <div class="section-head reveal">
-    <p class="section-tag">05 — Education</p>
+    <p class="section-tag">// 04 · Education</p>
     <h2 class="section-title">Academic background</h2>
   </div>
   <div class="edu-grid">
@@ -361,29 +587,34 @@
 <!-- CONTACT -->
 <section id="contact" class="section section-contact">
   <div class="section-head reveal">
-    <p class="section-tag">06 — Contact</p>
+    <p class="section-tag">// 05 · Contact</p>
     <h2 class="section-title">Let's build something together</h2>
     <p class="contact-sub">Open to full-time roles, freelance ERP/web work, and interesting collaborations.</p>
   </div>
 
   <div class="contact-grid reveal">
     <a href="mailto:shyamsundersahani01@gmail.com" class="contact-card">
-      <span class="contact-icon">✉️</span>
+      <span class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.94 6.7a1 1 0 0 1-1.12 0L2 7.24V19h20V7.24ZM3.2 5l8.8 6.6L20.8 5H3.2Z"/></svg></span>
       <span class="contact-label">Email</span>
       <span class="contact-value">shyamsundersahani01@gmail.com</span>
     </a>
     <a href="tel:+919610226455" class="contact-card">
-      <span class="contact-icon">📞</span>
+      <span class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg></span>
       <span class="contact-label">Phone</span>
       <span class="contact-value">+91 96102 26455</span>
     </a>
-    <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card" id="githubCard">
-      <span class="contact-icon">🐙</span>
+    <a href="https://github.com/shyamsahani01" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.76 2.71 1.25 3.37.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg></span>
       <span class="contact-label">GitHub</span>
-      <span class="contact-value">github.com/your-username</span>
+      <span class="contact-value">github.com/shyamsahani01</span>
+    </a>
+    <a href="https://www.linkedin.com/in/shyam-sunder-sahani-4718a0151/" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg></span>
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">Shyam Sunder Sahani</span>
     </a>
     <div class="contact-card contact-card-static">
-      <span class="contact-icon">📍</span>
+      <span class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
       <span class="contact-label">Location</span>
       <span class="contact-value">Jaipur, Rajasthan, India</span>
     </div>

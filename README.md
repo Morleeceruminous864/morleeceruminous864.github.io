@@ -17,6 +17,5 @@ python3 -m http.server 8080
 4. Site goes live at `https://your-username.github.io/portfolio/` (or `https://your-username.github.io/` if you named the repo `your-username.github.io`).
 
 ## Before deploying — fill these in
-- [ ] Replace `github.com/` placeholder links in `index.html` (`#githubLink`, `#githubCard`) with your real GitHub profile URL.
 - [ ] Add your resume PDF at `assets/resume.pdf` so the "Download Resume" button works.
-- [ ] Optionally add a photo/avatar in `assets/img/` and reference it in the hero section.
+- [ ] Optionally replace the initials-avatar hero visual with a real photo in `assets/img/`.

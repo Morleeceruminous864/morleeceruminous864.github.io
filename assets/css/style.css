@@ -369,6 +369,22 @@ ul { list-style: none; }
 }
 .btn-ghost:hover { background: var(--surface-hover); transform: translateY(-3px); }
 
+:root[data-theme="light"] .btn-primary {
+  background: linear-gradient(135deg, #1573d1, #0f5fb0);
+  color: #fff;
+  box-shadow: 0 8px 24px -8px rgba(21, 115, 209, 0.45);
+}
+:root[data-theme="light"] .btn-primary:hover {
+  box-shadow: 0 12px 30px -6px rgba(21, 115, 209, 0.55);
+}
+:root[data-theme="light"] .btn-ghost {
+  border-color: rgba(16, 21, 31, 0.18);
+}
+:root[data-theme="light"] .btn-ghost:hover {
+  background: rgba(21, 115, 209, 0.06);
+  border-color: rgba(21, 115, 209, 0.35);
+}
+
 .hero-socials { display: flex; gap: 14px; justify-content: center; }
 .social-icon {
   width: 42px; height: 42px;
@@ -438,6 +454,33 @@ ul { list-style: none; }
   background-clip: text;
 }
 .contact-sub { color: var(--text-dim); margin-top: 14px; }
+
+/* Light theme: give cards a soft, near-white "floating" look instead of a
+   faint tint on white (which had almost no separation from the page). */
+:root[data-theme="light"] .project-card,
+:root[data-theme="light"] .skill-cat,
+:root[data-theme="light"] .module-card,
+:root[data-theme="light"] .timeline-card,
+:root[data-theme="light"] .stat-card,
+:root[data-theme="light"] .edu-card,
+:root[data-theme="light"] .contact-card,
+:root[data-theme="light"] .strength-block {
+  background: #ffffff;
+  border-color: rgba(16, 21, 31, 0.08);
+  box-shadow: 0 2px 10px -4px rgba(16, 21, 31, 0.08);
+}
+:root[data-theme="light"] .project-card:hover,
+:root[data-theme="light"] .skill-cat:hover,
+:root[data-theme="light"] .module-card:hover,
+:root[data-theme="light"] .timeline-card:hover,
+:root[data-theme="light"] .stat-card:hover,
+:root[data-theme="light"] .edu-card:hover {
+  box-shadow: 0 16px 32px -12px rgba(21, 115, 209, 0.22);
+}
+:root[data-theme="light"] .expertise-item:hover { background: rgba(21, 115, 209, 0.03); }
+:root[data-theme="light"] .skill-cat-wide {
+  background: linear-gradient(135deg, rgba(21, 115, 209, 0.05), #ffffff);
+}
 
 /* ---------- About ---------- */
 .about-grid {

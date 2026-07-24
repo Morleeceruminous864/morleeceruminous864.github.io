@@ -8,6 +8,7 @@
   --text-dim: #8b93ab;
   --accent: #2490EF;
   --accent-2: #F2AA4C;
+  --accent-2-ink: #F2AA4C;
   --accent-3: #FB7185;
   --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
   --radius: 16px;
@@ -32,7 +33,8 @@
   --text: #10151f;
   --text-dim: #52607a;
   --accent: #1573d1;
-  --accent-2: #c47a12;
+  --accent-2: #E8991F;
+  --accent-2-ink: #9a5f0a;
   --accent-3: #d63b5c;
   --nav-bg: rgba(246, 248, 251, 0.7);
   --terminal-bg: #0f1626;
@@ -232,6 +234,12 @@ ul { list-style: none; }
 .ring-1 { width: 175px; height: 175px; border: 1px dashed rgba(36, 144, 239, 0.4); }
 .ring-2 { width: 230px; height: 230px; border: 1px solid rgba(215, 226, 234, 0.1); }
 .ring-3 { width: 290px; height: 290px; border: 1px dashed rgba(242, 170, 76, 0.35); }
+:root[data-theme="light"] .ring-1 { border-color: rgba(21, 115, 209, 0.45); }
+:root[data-theme="light"] .ring-2 { border-color: rgba(16, 21, 31, 0.14); }
+:root[data-theme="light"] .ring-3 { border-color: rgba(196, 122, 18, 0.4); }
+:root[data-theme="light"] .orbit-glow {
+  background: radial-gradient(circle, rgba(21, 115, 209, 0.28), rgba(196, 122, 18, 0.16) 55%, transparent 75%);
+}
 .avatar-core {
   position: absolute;
   top: 50%; left: 50%;
@@ -299,7 +307,7 @@ ul { list-style: none; }
   font-size: clamp(2.4rem, 6vw, 4.2rem);
   font-weight: 800;
   letter-spacing: -1.5px;
-  background: linear-gradient(100deg, var(--text) 20%, var(--accent) 45%, var(--accent-2) 60%, var(--text) 80%);
+  background: linear-gradient(100deg, var(--text) 20%, var(--accent) 45%, var(--accent-2-ink) 60%, var(--text) 80%);
   background-size: 250% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -314,7 +322,7 @@ ul { list-style: none; }
   font-family: 'JetBrains Mono', monospace;
   font-size: clamp(1.1rem, 2.6vw, 1.5rem);
   font-weight: 500;
-  color: var(--accent-2);
+  color: var(--accent-2-ink);
   min-height: 2.2em;
   margin-bottom: 22px;
 }
@@ -677,7 +685,7 @@ ul { list-style: none; }
   font-size: 0.82rem;
 }
 .timeline-card h3 { margin: 8px 0 2px; font-size: 1.15rem; }
-.timeline-company { color: var(--accent-2); font-size: 0.92rem; margin-bottom: 12px; }
+.timeline-company { color: var(--accent-2-ink); font-size: 0.92rem; margin-bottom: 12px; }
 .timeline-card ul { color: var(--text-dim); font-size: 0.92rem; }
 .timeline-card li { position: relative; padding-left: 16px; margin-bottom: 6px; }
 .timeline-card li::before {
@@ -836,7 +844,7 @@ ul { list-style: none; }
 }
 .edu-card h3 { margin: 8px 0 6px; font-size: 1.05rem; }
 .edu-card p { color: var(--text-dim); font-size: 0.9rem; }
-.edu-sub { display: block; margin-top: 8px; font-size: 0.8rem; color: var(--accent-2); }
+.edu-sub { display: block; margin-top: 8px; font-size: 0.8rem; color: var(--accent-2-ink); }
 
 .strengths {
   display: grid;

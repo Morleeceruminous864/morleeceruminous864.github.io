@@ -10,12 +10,7 @@ python3 -m http.server 8080
 # visit http://localhost:8080
 ```
 
-## Deploy on GitHub Pages
-1. Create a new GitHub repo (e.g. `portfolio` or `your-username.github.io`).
-2. Push this folder's contents to it.
-3. In the repo: **Settings → Pages → Source → Deploy from branch → `main` / root**.
-4. Site goes live at `https://your-username.github.io/portfolio/` (or `https://your-username.github.io/` if you named the repo `your-username.github.io`).
+## Deployed
+Live at **https://shyamsahani01.github.io/** via GitHub Pages (repo: `shyamsahani01/shyamsahani01.github.io`, branch `main`, root).
 
-## Before deploying — fill these in
-- [ ] Add your resume PDF at `assets/resume.pdf` so the "Download Resume" button works.
-- [ ] Optionally replace the initials-avatar hero visual with a real photo in `assets/img/`.
+To update: edit files, then `git add -A && git commit -m "..." && git push origin main`. Pages rebuilds automatically in 1-2 minutes.

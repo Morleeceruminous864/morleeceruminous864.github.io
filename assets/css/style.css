@@ -7,6 +7,7 @@
   --text: #e8ebf5;
   --text-dim: #8b93ab;
   --accent: #2490EF;
+  --accent-ink: #2490EF;
   --accent-2: #F2AA4C;
   --accent-2-ink: #F2AA4C;
   --accent-3: #FB7185;
@@ -33,6 +34,7 @@
   --text: #10151f;
   --text-dim: #52607a;
   --accent: #1573d1;
+  --accent-ink: #0e5aa3;
   --accent-2: #E8991F;
   --accent-2-ink: #9a5f0a;
   --accent-3: #d63b5c;
@@ -125,7 +127,7 @@ ul { list-style: none; }
   font-size: 1.3rem;
   letter-spacing: -0.5px;
 }
-.logo .dot { color: var(--accent); }
+.logo .dot { color: var(--accent-ink); }
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -297,7 +299,7 @@ ul { list-style: none; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .hero-eyebrow {
-  color: var(--accent);
+  color: var(--accent-ink);
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.95rem;
   margin-bottom: 14px;
@@ -357,8 +359,8 @@ ul { list-style: none; }
   border: none;
 }
 .btn-primary {
-  background: var(--gradient);
-  color: #05070d;
+  background: linear-gradient(135deg, #1a6fc4, #12508c);
+  color: #fff;
   box-shadow: 0 8px 30px -8px rgba(36, 144, 239, 0.5);
 }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 36px -6px rgba(36, 144, 239, 0.6); }
@@ -371,7 +373,6 @@ ul { list-style: none; }
 
 :root[data-theme="light"] .btn-primary {
   background: linear-gradient(135deg, #1573d1, #0f5fb0);
-  color: #fff;
   box-shadow: 0 8px 24px -8px rgba(21, 115, 209, 0.45);
 }
 :root[data-theme="light"] .btn-primary:hover {
@@ -432,7 +433,7 @@ ul { list-style: none; }
 .section-head { margin-bottom: 52px; text-align: center; }
 .section-tag {
   font-family: 'JetBrains Mono', monospace;
-  color: var(--accent);
+  color: var(--accent-ink);
   font-size: 0.85rem;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -591,7 +592,7 @@ ul { list-style: none; }
 .pill-accent {
   background: rgba(36, 144, 239, 0.1);
   border-color: rgba(36, 144, 239, 0.35);
-  color: var(--accent);
+  color: var(--accent-ink);
 }
 
 /* ---------- Module map ---------- */
@@ -724,7 +725,7 @@ ul { list-style: none; }
 .timeline-card:hover { transform: translateX(6px); border-color: var(--accent); }
 .timeline-date {
   font-family: 'JetBrains Mono', monospace;
-  color: var(--accent);
+  color: var(--accent-ink);
   font-size: 0.82rem;
 }
 .timeline-card h3 { margin: 8px 0 2px; font-size: 1.15rem; }
@@ -782,7 +783,7 @@ ul { list-style: none; }
 }
 .badge-live { background: rgba(74, 222, 128, 0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.35); }
 .badge-dev { background: rgba(251, 113, 133, 0.12); color: var(--accent-3); border: 1px solid rgba(251,113,133,0.35); }
-.badge-current { background: rgba(36, 144, 239, 0.12); color: var(--accent); border: 1px solid rgba(36,144,239,0.35); }
+.badge-current { background: rgba(36, 144, 239, 0.12); color: var(--accent-ink); border: 1px solid rgba(36,144,239,0.35); }
 .project-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
 .project-card p { color: var(--text-dim); font-size: 0.92rem; margin-bottom: 12px; }
 .project-detail-list { color: var(--text-dim); font-size: 0.86rem; margin-bottom: 16px; flex-grow: 1; }
@@ -833,7 +834,7 @@ ul { list-style: none; }
 }
 .expertise-item:hover .expertise-num {
   opacity: 1;
-  color: var(--accent);
+  color: var(--accent-ink);
   -webkit-text-stroke: 0;
 }
 .expertise-body { flex: 1; }
@@ -862,7 +863,7 @@ ul { list-style: none; }
   color: var(--text-dim);
   font-family: 'JetBrains Mono', monospace;
 }
-.project-link { color: var(--accent); font-size: 0.9rem; font-weight: 600; }
+.project-link { color: var(--accent-ink); font-size: 0.9rem; font-weight: 600; }
 .project-link:hover { text-decoration: underline; }
 
 /* ---------- Education ---------- */

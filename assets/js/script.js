@@ -80,6 +80,21 @@ navLinksList.querySelectorAll('a').forEach(link => {
   });
 });
 
+// ----- Theme toggle -----
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+}
+
 // ----- Character-by-character scroll reveal -----
 const charRevealEl = document.getElementById('aboutQuote');
 if (charRevealEl) {
